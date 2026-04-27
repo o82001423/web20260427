@@ -10,33 +10,6 @@
 
 <body>
     <h2>閏年判斷 給定一個西元 年分 來段是否為認閏年</H2>
-    <?php
-
-use LDAP\Result;
-
-    function isleapYear($year) {
-            // 先看有沒有400年VIP卡
-    if( $year % 400 ==0){
-        return true;
-    }
-      // 再看是不是100年的關卡（會被擋）
-    if($year % 100 == 0){
-        return false;
-    }
-        // 最後看是不是每4年一次
-   if($year % 4 == 0){
-        return true;
-    }
-        // 其他都不是
-    return false ;
-    }
-
-    ?>
-
-    
-
-
-
     <Ul>
         <li>地球對太陽的公轉一年的真實時間大約是365天5小時48分46秒,因此以365天定為一年的狀況下,每年會多出近六小時的時間,所以每隔四年設】</li>
         <li>公元年分除以4不可整除,為平年。</li>
